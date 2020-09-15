@@ -12,9 +12,7 @@
 }
 // Registration
 .footer .registration {
-  content: " ";
-  text-align: center;
-  align-content: center;
+  max-width: 100%;
   padding: 50px 20px;
   color: $white-color;
   background-color: $primary-color;
@@ -25,6 +23,16 @@
   }
   @media screen and (min-width: 1344px) {
     padding: 100px 62px;
+  }
+}
+.registration-container {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;;
+  text-align: center;
+  align-content: center;
+  @media screen and (min-width: 420px) and (max-width: 767px) {
+    width: 380px;
   }
 }
 .footer {
@@ -132,21 +140,55 @@
     padding: 30px 20px;
   }
   @media screen and (min-width: 768px) {
-    align-items: baseline;
+    margin: 0;
     padding: 43px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    
+   
+  }  
+  @media screen and (min-width: 1344px) {
+    padding: 56px 183px;
   }
 }
+.footer-logo {
+  @media screen and (max-width: 767px) {
+    width: 84px;
+    height: 30px;
+    margin-bottom: 21px;
+    margin-left: auto;
+    margin-right: auto;
 
+  } 
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    width: 128px;
+    height: 45px;
+    margin-right: 203px;
+  } 
+  @media screen and (min-width: 1344px) {
+    width: 128px;
+    height: 45px;
+    margin-right: 290px;
+  }
+}
+.contacts-list {
+  &.item {
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .tel.link {
-  display: inline-flex;
+  display: flex;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.08em;
   color: $primary-color;
-}
-.insta.link {
-  display: block;
 }
 .tel.link::before {
   content: " ";
@@ -159,13 +201,29 @@
   background-position: center;
 }
 
-.icon- {
-  &insta {
-    fill: $white-color;
-    background-color: tomato;
-    margin-top: 31px;
+.insta {
+  &.icon {
+    fill: $accent-color;
+    background-color: radial-gradient(110.28% 110.28% at 20.5% 87.39%, #FAE100 0%, #FADC04 5.44%, #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%, #FF7950 30.54%, #FF1C74 49.22%, #6C1CD1 100%);
+    @media screen and (max-width: 767px) {
+      margin-top: 31px;
+    }
+  }
+  &.link {
+    display: block;
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
+      padding-left: 24px;
+      margin-left: 24px;
+      border-left: 1px solid $secondary-text-color;
+    }
+    @media screen and (min-width: 1344px) {
+      padding-left: 24px;
+      margin-left: 16px;
+      border-left: 1px solid $secondary-text-color;
+    }
   }
 }
+
 
 // Rights
 .rights {
