@@ -1,0 +1,259 @@
+.footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
+  font-style: normal;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+// Registration
+.footer .registration {
+  content: " ";
+  text-align: center;
+  align-content: center;
+  padding: 50px 20px;
+  color: $white-color;
+  background-color: $primary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    padding: 50px 71px;
+  }
+  @media screen and (min-width: 1344px) {
+    padding: 100px 62px;
+  }
+}
+.footer {
+  &-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.36;
+    vertical-align: top;
+    letter-spacing: 0.08em;
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
+      font-size: 26px;
+      line-height: 1.30;
+      letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: 1344px) {
+      font-size: 46px;
+      line-height: 1.30;
+      letter-spacing: 0.03em;
+    }
+  }
+  &-accent {
+    color: $accent-color;
+  }
+}
+.footer-text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.08em;
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
+      font-size: 14px;
+      line-height: 1.21;
+    }
+    @media screen and (min-width: 1344px) {
+      font-size: 30px;
+      line-height: 1.23;
+    }
+}
+// Form
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  @media screen and (min-width: 1344px) {
+    margin-top: 50px;
+  }
+}
+.footer .modal-input {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 48px;
+  padding: 15px 28px 16px 28px;
+  background-color: transparent;
+  border: 1px solid $white-color;
+  box-sizing: border-box;
+  color: $white-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  &::placeholder {
+    color: $white-color;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    max-width: 390px;
+  }
+}
+.modal-input.name {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 1344px) {
+    margin-top: 56px;
+    margin-bottom: 30px;
+  }
+}
+.footer-button {
+  display: inline-block;
+  align-items: center;
+  margin-top: 50px;
+  color: $white-color;
+  background-color: $accent-color;
+  border: none;
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-top: 31px;
+  }
+  @media screen and (min-width: 1343px) {
+    margin-top: 80px;
+  }
+}
+
+// Contacts
+.footer .contacts {
+  text-align: center;
+  align-content: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: baseline;
+    padding: 43px 40px;
+  }
+}
+
+.tel.link {
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: $primary-color;
+}
+.insta.link {
+  display: block;
+}
+.tel.link::before {
+  content: " ";
+  margin-right: 10px;
+  height: 19px;
+  width: 20px;
+  vertical-align: middle;
+  background-image: url(../images/footer-images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon- {
+  &insta {
+    fill: $white-color;
+    background-color: tomato;
+    margin-top: 31px;
+  }
+}
+
+// Rights
+.rights {
+  background-color: $primary-color;
+  &-text {
+    margin: 0px;
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    vertical-align: baseline;
+  }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding: 21px 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    padding: 22px 40px;
+  }
+  @media screen and (min-width: 1344px) {
+    padding: 22px 183px;
+  }
+}
+
+// Background-image
+@media screen and (max-width: 767px) {
+	.footer .registration {
+	background-image: url('../images/footer-images/footer-bg-mobile-1x.png');
+	background-size: cover;
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+  	screen and (min-resolution: 2dppx) {
+		background-image: url('../images/footer-images/footer-bg-mobile-1x.png');
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+	.footer .registration {
+	background-image: url('../images/footer-images/footer-bg-tablet-1x.webp');
+	background-size: cover;
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+  	screen and (min-resolution: 2dppx) {
+		background-image: url('../images/footer-images/footer-bg-tablet-2x.webp');
+		}
+	}
+}
+@media screen and (min-width: 1344px) {
+	.footer .registration {
+	background-image: url('../images/footer-images/footer-bg-desktop-1x.webp');
+	background-size: cover;
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+  	screen and (min-resolution: 2dppx) {
+		background-image: url('../images/footer-images/footer-bg-desktop-2x.webp');
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.footer .registration {
+	background-image: url('../images/footer-images/footer-bg-mobile-1x.png');
+	background-size: cover;
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+  	screen and (min-resolution: 2dppx) {
+		background-image: url('../images/footer-images/footer-bg-mobile-2x.png');
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+	.footer .registration {
+	background-image: url('../images/footer-images/footer-bg-tablet-1x.png');
+	background-size: cover;
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+  	screen and (min-resolution: 2dppx) {
+		background-image: url('../images/footer-images/footer-bg-tablet-2x.png');
+		}
+	}
+}
+@media screen and (min-width: 1344px) {
+	.footer .registration {
+	background-image: url('../images/footer-images/footer-bg-desktop-1x.png');
+	background-size: cover;
+	@media screen and (min-device-pixel-ratio: 2),
+	screen and (min-resolution: 192dpi),
+  	screen and (min-resolution: 2dppx) {
+		background-image: url('../images/footer-images/footer-bg-desktop-2x.png');
+		}
+	}
+}
