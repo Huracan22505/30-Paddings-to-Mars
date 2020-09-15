@@ -278,11 +278,13 @@
 }
 
 .semester-list {
+    padding-top: 11px;
+
     @media screen and (min-width: 768px) {
 
         display: flex;
         align-items: baseline;
-        padding-top: 11px;
+
 
     }
 
