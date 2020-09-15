@@ -16,11 +16,33 @@
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: $primary-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-tab {
+    display: flex;
+  }
+
+  .teacher-about {
+    margin-left: 40px;
+    width: calc(100% - 286px);
+  }
 }
 
 .teacher-name {
   margin-top: 20.42px;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+  }
 }
 
 .teacher-list {
@@ -37,6 +59,10 @@
 
   & + .teacher-item {
     margin-top: 21px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 33px;
+    }
   }
 
   &::before {
@@ -84,6 +110,10 @@
     line-height: 1.65;
     letter-spacing: 0.08em;
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    letter-spacing: 0em;
   }
 }
 
