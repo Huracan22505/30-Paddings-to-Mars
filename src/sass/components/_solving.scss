@@ -31,12 +31,20 @@
 
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
+    & + .item {
+      margin-top: 15px;
+    }
+
     &:hover,
     &:focus {
       background-color: $accent-color;
       color: $white-color;
 
       .tittle {
+        color: $white-color;
+      }
+
+      .decoration {
         color: $white-color;
       }
 
@@ -73,7 +81,7 @@
 
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.64;
+    line-height: 1.65;
 
     letter-spacing: 0.08em;
 
@@ -85,7 +93,7 @@
 
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.68;
+    line-height: 1.67;
 
     letter-spacing: 0.08em;
 
