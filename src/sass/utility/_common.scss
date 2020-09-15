@@ -63,3 +63,20 @@ img {
 textarea {
   resize: none;
 }
+.btn {
+  display: block;
+  padding: 14px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 320px) {
+    width: 260px;
+  }
+}
