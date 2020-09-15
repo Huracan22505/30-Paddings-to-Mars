@@ -67,6 +67,8 @@
 }
 // Form
 .footer-form {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   @media screen and (min-width: 1344px) {
     margin-top: 50px;
@@ -113,6 +115,12 @@
   background-color: $accent-color;
   border: none;
   text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    margin-top: 31px;
+  }
+  @media screen and (min-width: 1343px) {
+    margin-top: 80px;
+  }
 }
 
 // Contacts
@@ -125,8 +133,10 @@
   }
   @media screen and (min-width: 768px) {
     align-items: baseline;
+    padding: 43px 40px;
   }
 }
+
 .tel.link {
   display: inline-flex;
   font-weight: 600;
@@ -144,7 +154,7 @@
   height: 19px;
   width: 20px;
   vertical-align: middle;
-  background-image: url(/images/icons/icon-call.svg);
+  background-image: url(../images/footer-images/phone.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -183,67 +193,67 @@
 // Background-image
 @media screen and (max-width: 767px) {
 	.footer .registration {
-	background-image: url('/images/footer-images/footer-bg-mobile-1x.png');
+	background-image: url('../images/footer-images/footer-bg-mobile-1x.png');
 	background-size: cover;
 	@media screen and (min-device-pixel-ratio: 2),
 	screen and (min-resolution: 192dpi),
   	screen and (min-resolution: 2dppx) {
-		background-image: url('/images/footer-images/footer-bg-mobile-1x.png');
+		background-image: url('../images/footer-images/footer-bg-mobile-1x.png');
 		}
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1343px) {
 	.footer .registration {
-	background-image: url('/images/footer-images/footer-bg-tablet-1x.webp');
+	background-image: url('../images/footer-images/footer-bg-tablet-1x.webp');
 	background-size: cover;
 	@media screen and (min-device-pixel-ratio: 2),
 	screen and (min-resolution: 192dpi),
   	screen and (min-resolution: 2dppx) {
-		background-image: url('/images/footer-images/footer-bg-tablet-2x.webp');
+		background-image: url('../images/footer-images/footer-bg-tablet-2x.webp');
 		}
 	}
 }
 @media screen and (min-width: 1344px) {
 	.footer .registration {
-	background-image: url('/images/footer-images/footer-bg-desktop-1x.webp');
+	background-image: url('../images/footer-images/footer-bg-desktop-1x.webp');
 	background-size: cover;
 	@media screen and (min-device-pixel-ratio: 2),
 	screen and (min-resolution: 192dpi),
   	screen and (min-resolution: 2dppx) {
-		background-image: url('/images/footer-images/footer-bg-desktop-2x.webp');
+		background-image: url('../images/footer-images/footer-bg-desktop-2x.webp');
 		}
 	}
 }
 @media screen and (max-width: 767px) {
 	.footer .registration {
-	background-image: url('/images/footer-images/footer-bg-mobile-1x.png');
+	background-image: url('../images/footer-images/footer-bg-mobile-1x.png');
 	background-size: cover;
 	@media screen and (min-device-pixel-ratio: 2),
 	screen and (min-resolution: 192dpi),
   	screen and (min-resolution: 2dppx) {
-		background-image: url('/images/footer-images/footer-bg-mobile-2x.png');
+		background-image: url('../images/footer-images/footer-bg-mobile-2x.png');
 		}
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1343px) {
 	.footer .registration {
-	background-image: url('/images/footer-images/footer-bg-tablet-1x.png');
+	background-image: url('../images/footer-images/footer-bg-tablet-1x.png');
 	background-size: cover;
 	@media screen and (min-device-pixel-ratio: 2),
 	screen and (min-resolution: 192dpi),
   	screen and (min-resolution: 2dppx) {
-		background-image: url('/images/footer-images/footer-bg-tablet-2x.png');
+		background-image: url('../images/footer-images/footer-bg-tablet-2x.png');
 		}
 	}
 }
 @media screen and (min-width: 1344px) {
 	.footer .registration {
-	background-image: url('/images/footer-images/footer-bg-desktop-1x.png');
+	background-image: url('../images/footer-images/footer-bg-desktop-1x.png');
 	background-size: cover;
 	@media screen and (min-device-pixel-ratio: 2),
 	screen and (min-resolution: 192dpi),
   	screen and (min-resolution: 2dppx) {
-		background-image: url('/images/footer-images/footer-bg-desktop-2x.png');
+		background-image: url('../images/footer-images/footer-bg-desktop-2x.png');
 		}
 	}
 }
