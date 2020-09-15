@@ -79,4 +79,14 @@ textarea {
     margin-right: auto;
     width: 260px;
   }
+
+  @media screen and (min-width: 1344px) {
+    width: 336px;
+    padding-top: 27px;
+    padding-bottom: 26px;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
 }
