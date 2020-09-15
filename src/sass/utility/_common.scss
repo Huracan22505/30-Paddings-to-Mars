@@ -18,10 +18,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 img {
   display: block;
 
@@ -62,4 +58,25 @@ img {
 
 textarea {
   resize: none;
+}
+
+.btn {
+  display: block;
+  padding: 14px 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+  }
 }
