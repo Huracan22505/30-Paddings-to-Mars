@@ -43,6 +43,12 @@
         max-width: 100%;
         margin-top: 189px;
     }
+
+    @media screen and (min-width: 1344px) {
+
+        display: none;
+
+    }
 }
 
 .program-semestr {
@@ -204,14 +210,64 @@
     transform: translateX(50%);
     max-width: 280px;
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+        max-width: 688px;
+        padding-left: 98px;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        padding-right: 0px;
+        bottom: -252px;
+
+    }
+
+    @media screen and (min-width: 1344px) {
+        max-width: 1314px;
+        padding-left: 83px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-right: 83px;
+        bottom: -199px;
+
+    }
 }
 
 .choose-us-item {
-    margin-bottom: 20px;
-    max-width: 205px;
+    @media screen and (max-width: 767px) {
+        max-width: 205px;
+        margin-bottom: 20px;
 
-    &:last-child {
-        margin-bottom: 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1343px) {
+
+        margin-bottom: 30px;
+
+        &:nth-child(2n+1) {
+            width: 236px;
+            margin-right: 20px;
+        }
+
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0px;
+        }
+    }
+
+    @media screen and (min-width: 1344px) {
+
+        width: 356px;
+
+        &:not(:nth-child(3n)) {
+            margin-right: 40px;
+
+        }
+
+        &:not(:nth-last-child(-n+3)) {
+            margin-bottom: 32px;
+        }
     }
 }
 
@@ -224,6 +280,12 @@
     line-height: 1.65;
     letter-spacing: 0.08em;
     color: $accent-color;
+
+    @media screen and (min-width: 1344px) {
+
+        font-size: 20px;
+        line-height: 1.65;
+    }
 }
 
 /*.choose-us-number::before {
@@ -242,5 +304,32 @@
     padding: 0;
     font-size: 14px;
     line-height: 1.43;
+    letter-spacing: 0.08em;
     color: $primary-color;
+
+    @media screen and (min-width: 1344px) {
+
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.choose-us-list {
+    @media screen and (min-width: 768px) {
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+.choose-us-text-span {
+    display: inline-block;
+    max-width: 205px;
+
+    @media screen and (min-width:1344px) {
+
+        max-width: 356px;
+
+    }
 }
