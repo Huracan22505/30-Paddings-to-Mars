@@ -16,24 +16,37 @@
 .guaranties-wrap {
   padding-top: 30px;
   padding-bottom: 31px;
-  background-color: #f1f1f1;
+  @media screen and (max-width: 767px) {
+    background-color: #f1f1f1;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .guaranties-list {
   margin: 0 auto;
-  padding: 0;
   list-style: none;
   position: relative;
+  @media screen and (max-width: 676px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 768px) {
+    background-color: #f1f1f1;
+    padding: 30px 50px 30px 79px;
+  }
 }
 
-.guaranties-list::after {
+.guaranties-item:not(:last-child)::after {
   z-index: 1;
   position: absolute;
   content: '';
-  border-left: 1px dashed $secondary-text-color;
-  height: 78%;
-  top: 15px;
-  left: -8px;
+  border-left: 1.35px dashed $secondary-text-color;
+  height: 90%;
+  top: 24px;
+  left: 3.5px;
 }
 
 .guaranties-item {
@@ -41,28 +54,36 @@
   font-weight: 500;
   line-height: 1.667;
   position: relative;
-  padding-left: 25px;
-  letter-spacing: 0.03em;
+  padding-left: 28px;
+  letter-spacing: 0.02em;
 
   color: $third-text-color;
 
   &:not(:last-child) {
     margin-bottom: 23px;
+    @media screen and (min-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
 
   &::before {
     z-index: 2;
     display: block;
     content: '';
-    width: 25px;
-    height: 25px;
-    border: 1px solid orangered;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    left: -20px;
-    top: 0;
+    left: -11px;
+    top: -6.5px;
     background-repeat: no-repeat;
     background-position: center;
-    // background-image: url(../images/icons/ICONNAME.svg);
+    background-image: url(../images/icons/fire.svg);
+  }
+}
+
+.guaranties-item {
+  @media screen and (min-width: 767px) {
+    letter-spacing: 0.01em;
   }
 }
 
