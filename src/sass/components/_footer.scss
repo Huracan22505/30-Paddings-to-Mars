@@ -137,6 +137,7 @@
   background-color: $accent-color;
   border: 2px solid $accent-color;;
   text-align: center;
+  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
   @media screen and (min-width: 768px) and (max-width: 1343px) {
     margin-top: 31px;
   }
@@ -238,6 +239,7 @@
     line-height: 1.23;
     border-right: 1px solid $secondary-text-color;
   }
+  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
   &:hover,
   &:focus {
     fill: $primary-color;
