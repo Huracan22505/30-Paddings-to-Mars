@@ -31,12 +31,11 @@
               ./images/logo/logo-black@2x.png 2x
             "
           />
-
           <img src="./images/logo/logo-black.png" alt="" />
         </picture>
       </a>
 
-      <nav class="menu-nav">
+      <nav class="menu-nav is-hidden" burger-menu>
         <div class="modal">
           <div class="subheader-position">
             <picture>
@@ -70,29 +69,25 @@
               />
               <img src="./images/logo/logo-white.png" alt="" />
             </picture>
-            <button type="button" class="menu-close">
-              <!-- <svg>
-                                          <use href="./images/icons/symbol-defs.svg#cross"></use>
-                                        </svg> -->
-            </button>
+            <button type="button" class="menu-close" burger-menu-close></button>
           </div>
           <ul class="menu-list list">
-            <li class="menu-item">Программа обучения</li>
-            <li class="menu-item">О нас</li>
-            <li class="menu-item">Варианты обучения</li>
-            <li class="menu-item">Контакты</li>
+            <li><a href="#program" class="menu-item">Программа обучения</a></li>
+            <li><a href="#teacher-sec" class="menu-item">О нас</a></li>
+            <li><a href="#solving" class="menu-item">Варианты обучения</a></li>
+            <li><a href="#contact" class="menu-item">Контакты</a></li>
           </ul>
-          <a href="#" class="modal-button btn">консультация по телефону</a>
+          <a href="#footer-form" class="modal-button btn"
+            >консультация по телефону</a
+          >
         </div>
       </nav>
 
-      <a href="#" class="header-button btn">консультация по телефону</a>
+      <a href="#footer-form" class="header-button btn"
+        >консультация по телефону</a
+      >
 
-      <button type="button" class="menu-open">
-        <!-- <svg class="icon-menu">
-          <use href="./images/icons/symbol-defs.svg#menu"></use>
-        </svg> -->
-      </button>
+      <button type="button" class="menu-open" burger-menu-open></button>
     </div>
     <section class="section-hero">
       <div class="hero-title">
@@ -107,7 +102,7 @@
           </p>
         </div>
         <a
-          href="#"
+          href="#footer-form"
           class="hero-btn btn"
           aria-label="подписка на бесплатное занятие"
           >хочу на бесплатное занятие</a
@@ -137,7 +132,6 @@
           "
           type="image/webp"
         />
-
         <source
           srcset="
             ./images/hero/hero-desk.png    1x,
@@ -158,7 +152,6 @@
             ./images/hero/hero-mob@2x.png 2x
           "
         />
-
         <img src="./images/hero/hero-mob.png" alt="" />
       </picture>
       <ul class="hero-features list">
@@ -177,3 +170,5 @@
     </section>
   </div>
 </header>
+
+<script src="./hero-menu/menu.js"></script>
