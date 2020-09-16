@@ -2,6 +2,10 @@
   padding-top: 198px;
   padding-bottom: 50px;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 201px;
+  }
+
   .tittle {
     margin-top: 0;
     margin-bottom: 30px;
@@ -14,10 +18,18 @@
     letter-spacing: 0.03em;
 
     color: $primary-color;
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
   }
 }
 
 .solving-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .item {
     width: 100%;
     height: 280px;
@@ -31,12 +43,30 @@
 
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
-    & + .item {
-      margin-top: 15px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      width: 334px;
+      height: 334px;
+
+      padding-top: 40px;
+
+      &:nth-child(odd) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(-n + 4) {
+        margin-bottom: 27px;
+      }
     }
 
-    &:hover,
-    &:focus {
+    @media screen and (max-width: 767px) {
+      & + .item {
+        margin-top: 15px;
+      }
+    }
+
+    &:hover {
       background-color: $accent-color;
       color: $white-color;
 
@@ -62,6 +92,10 @@
     margin-bottom: 20px;
 
     fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 
   .tittle {
@@ -79,13 +113,20 @@
   .decoration {
     display: block;
 
-    font-weight: bold;
+    height: 32px;
+
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.65;
 
     letter-spacing: 0.08em;
 
     color: $accent-color;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 
   .text {
@@ -98,5 +139,14 @@
     letter-spacing: 0.08em;
 
     color: $secondary-text-color;
+
+    @media screen and (min-width: 768px) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  .text-fix {
+    display: block;
   }
 }
