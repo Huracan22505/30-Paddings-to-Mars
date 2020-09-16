@@ -5,6 +5,32 @@
   & p {
     margin: 0px;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 302px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    padding-top: 329px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-tab {
+    display: flex;
+  }
+
+  .teacher-about {
+    margin-left: 40px;
+    width: calc(100% - 286px);
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .teacher-about {
+    margin-left: 30px;
+    width: calc(100% - 672px);
+  }
 }
 
 .teacher-title,
@@ -20,16 +46,10 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .teacher-tab {
-    display: flex;
-  }
-
-  .teacher-about {
-    margin-left: 40px;
-    width: calc(100% - 286px);
+  @media screen and (min-width: 1344px) {
+    margin-bottom: 50px;
+    font-size: 46px;
   }
 }
 
@@ -43,6 +63,11 @@
     line-height: 1.2;
     letter-spacing: 0.08em;
   }
+
+  @media screen and (min-width: 1344px) {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
 }
 
 .teacher-list {
@@ -51,6 +76,10 @@
   padding-left: 0px;
   border-top: 1px solid $secondary-text-color;
   list-style: none;
+
+  @media screen and (min-width: 1344px) {
+    padding-top: 30px;
+  }
 }
 
 .teacher-item {
@@ -59,22 +88,26 @@
 
   & + .teacher-item {
     margin-top: 21px;
-
-    @media screen and (min-width: 768px) {
-      margin-top: 33px;
-    }
   }
+  @media screen and (min-width: 1344px) {
+    padding-left: 59px;
+  }
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 17px;
-    height: 14px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/icons/check.svg);
+.teacher-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 17px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/icons/check.svg);
+
+  @media screen and (min-width: 1344px) {
+    width: 24.41px;
+    height: 20px;
   }
 }
 
@@ -86,6 +119,11 @@
   line-height: 1.21;
   letter-spacing: 0.06em;
   color: $primary-color;
+
+  @media screen and (min-width: 1344px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .education {
@@ -110,10 +148,20 @@
     line-height: 1.65;
     letter-spacing: 0.08em;
     color: $accent-color;
+
+    @media screen and (min-width: 1344px) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     letter-spacing: 0em;
+  }
+
+  @media screen and (min-width: 1344px) {
+    font-size: 18px;
+    line-height: 1.56;
   }
 }
 
@@ -127,5 +175,10 @@
   &:hover,
   &:focus {
     text-decoration-line: none;
+  }
+
+  @media screen and (min-width: 1344px) {
+    font-size: 18px;
+    line-height: 1.56;
   }
 }
