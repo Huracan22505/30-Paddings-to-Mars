@@ -17,6 +17,10 @@
   padding-top: 30px;
   padding-bottom: 31px;
   background-color: #f1f1f1;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
 }
 
 .guaranties-list {
@@ -26,14 +30,14 @@
   position: relative;
 }
 
-.guaranties-list::after {
+.guaranties-item:not(:last-child)::after {
   z-index: 1;
   position: absolute;
   content: '';
-  border-left: 1px dashed $secondary-text-color;
-  height: 78%;
-  top: 15px;
-  left: -8px;
+  border-left: 1.35px dashed $secondary-text-color;
+  height: 90%;
+  top: 24px;
+  left: 0;
 }
 
 .guaranties-item {
@@ -54,15 +58,14 @@
     z-index: 2;
     display: block;
     content: '';
-    width: 25px;
-    height: 25px;
-    border: 1px solid orangered;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    left: -20px;
-    top: 0;
+    left: -14px;
+    top: -7px;
     background-repeat: no-repeat;
     background-position: center;
-    // background-image: url(../images/icons/ICONNAME.svg);
+    background-image: url(../images/icons/fire.svg);
   }
 }
 
