@@ -37,7 +37,7 @@
   border-left: 1.35px dashed $secondary-text-color;
   height: 90%;
   top: 24px;
-  left: 0;
+  left: 1%;
 }
 
 .guaranties-item {
@@ -45,8 +45,8 @@
   font-weight: 500;
   line-height: 1.667;
   position: relative;
-  padding-left: 25px;
-  letter-spacing: 0.03em;
+  padding-left: 28px;
+  letter-spacing: 0.02em;
 
   color: $third-text-color;
 
@@ -61,7 +61,7 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    left: -14px;
+    left: -11px;
     top: -7px;
     background-repeat: no-repeat;
     background-position: center;
