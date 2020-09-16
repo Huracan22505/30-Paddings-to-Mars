@@ -12,6 +12,7 @@
 
   @media screen and (min-width: 1344px) {
     padding-top: 329px;
+    padding-bottom: 98px;
   }
 }
 
@@ -182,6 +183,7 @@
   line-height: 1.67;
   text-decoration-line: underline;
   color: $accent-color;
+  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
 
   &:hover,
   &:focus {
