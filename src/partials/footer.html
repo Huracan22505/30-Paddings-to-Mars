@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <section class="footer">
-  <div class="registration">
-    <h2 class="footer-title">
-      Регистрация на <strong class="footer-accent"> бесплатную </strong> телефонную <strong class="footer-accent"> консультацию </strong> по нюансам ЗНО
-      по английскому языку
-    </h2>
-    <form method="POST" class="footer-form" autocomplete="off" >
-      <b class="footer-text">
-        Оставь заявку на участие в <span class="footer-accent"> бесплатном занятии. </span> 
-        С вами свяжется консультант и ответит на вопросы
-      </b>
-      <label class="form-field">
-        <input type="text" name="name" class="modal-input name" placeholder="Имя&ast;" />
-      </label>
-      <label class="form-field">
-        <input type="tel" name="tel" class="modal-input" placeholder="Телефон&ast;"/>
-      </label>
-      <button type="submit" class="footer-button btn">
-        хочу на бесплатное занятие
-      </button>
-    </form>
+  <div class="registration" id="callback">
+    <div class="registration-container">
+      <h2 class="footer-title">
+        Регистрация на
+        <strong class="footer-accent"> бесплатную </strong> телефонную
+        <strong class="footer-accent"> консультацию </strong> по нюансам ЗНО по
+        английскому языку
+      </h2>
+      <form method="POST" class="footer-form" autocomplete="off">
+        <b class="footer-text">
+          Оставь заявку на участие в
+          <span class="footer-accent"> бесплатном занятии. </span> <br />
+          С вами свяжется консультант и ответит на вопросы
+        </b>
+        <label class="form-field">
+          <input
+            type="text"
+            name="name"
+            class="modal-input name"
+            placeholder="Имя&ast;"
+          />
+        </label>
+        <label class="form-field">
+          <input
+            type="tel"
+            name="tel"
+            class="modal-input"
+            placeholder="Телефон&ast;"
+          />
+        </label>
+        <button type="submit" class="footer-button btn">
+          хочу на бесплатное занятие
+        </button>
+      </form>
+    </div>
   </div>
-  <div class="contacts">
-    <!-- Logo -->
-    <ul class="contacts-list list">
-      <li>
-        <a href="tel:+380000000000" class="tel link">
-           +380 (000) 000 00 00
-        </a>
-      </li>
-      <li>
-        <a href="#" class="insta link">
-          <svg class="icon-insta" height="40" width="40" aria-label="Cылка на инстаграм"> <use href="./images/footer-images/instagram.svg"></use> </svg>
-        </a>
-      </li>
-    </ul>
+  <div class="contacts container" id="contact">
+    <div class="footer-logo-position">
+      <a href="#" class="footer-logo">
+        <picture>
+          <source
+            srcset="
+              ./images/logo/logo-black-t.webp    1x,
+              ./images/logo/logo-black-t@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-black.webp    1x,
+              ./images/logo/logo-black@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-black-t.png    1x,
+              ./images/logo/logo-black-t@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/logo/logo-black.png    1x,
+              ./images/logo/logo-black@2x.png 2x
+            "
+          />
+
+          <img src="./images/logo/logo-black.png" alt="" />
+        </picture>
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="tel:+380000000000" class="tel link">
+        <svg aria-label="иконка звонка" class="icon">
+          <use href="./images/icons/symbol-defs.svg#phone"></use>
+        </svg>
+        +380 (000) 000 00 00
+      </a>
+      <a href="#" class="insta link"></a>
+    </div>
   </div>
   <div class="rights">
-    <p class="rights-text">
-      &commat; Все права защищены, 2019
-    </p>
+    <p class="rights-text container">&commat; Все права защищены, 2019</p>
   </div>
 </section>
