@@ -69,9 +69,19 @@ header {
 }
 
 // навигация
+
 .menu-nav {
   display: none;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    position: static;
+    display: block;
+    padding: 0;
+  }
   &.is-open {
     display: block;
     position: absolute;
@@ -84,13 +94,8 @@ header {
     z-index: 999;
 
     @media screen and (min-width: 768px) {
-      padding-top: 40px;
+      padding-top: 42px;
     }
-  }
-
-  @media screen and (min-width: 1344px) {
-    position: static;
-    display: flex;
   }
 
   .modal {
@@ -103,11 +108,12 @@ header {
     }
 
     @media screen and (min-width: 768px) {
-      width: 728px;
+      width: 688px;
     }
 
     @media screen and (min-width: 1344px) {
       width: 100%;
+      margin-left: 143px;
     }
   }
 
@@ -125,8 +131,15 @@ header {
 // кнопка консультации
 .modal-button,
 .header-button {
+  background-color: transparent;
   color: $accent-color;
   border: 2px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
 }
 
 .header-button {
@@ -153,37 +166,46 @@ header {
   display: block;
   margin-top: 50px;
   margin-bottom: 50px;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.8;
-  letter-spacing: 0.03em;
-  color: $white-color;
-
-  .menu-item:hover,
-  .menu-item:focus {
-    color: $accent-color;
-  }
 
   @media screen and (min-width: 768px) and (max-width: 1343px) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 72px;
     width: 332px;
-    font-size: 26px;
   }
 
   @media screen and (min-width: 1344px) {
     display: flex;
-    margin-left: 143px;
+    align-items: center;
+    margin: 0;
+    & li + li {
+      margin-left: 40px;
+    }
+  }
+}
+
+.menu-item {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: $white-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1344px) {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.214;
     text-transform: uppercase;
     color: $secondary-text-color;
-
-    & .menu-item + .menu-item {
-      margin-left: 40px;
-    }
   }
 }
 
@@ -196,10 +218,19 @@ header {
     padding-top: 70px;
     position: relative;
   }
+
+  @media screen and (min-width: 1344px) {
+    padding-top: 125px;
+    padding-bottom: 130px;
+  }
 }
 
 .hero-title {
   @media screen and (min-width: 768px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 1344px) {
     width: calc(50% - 20px);
   }
 }
@@ -265,7 +296,7 @@ header {
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 0;
+    margin: 0;
   }
 }
 
@@ -285,8 +316,8 @@ header {
   }
 
   @media screen and (min-width: 1344px) {
-    top: 0;
-    right: -270px;
+    top: 46px;
+    left: calc(50% - 52px);
     width: 842px;
     height: 718px;
   }
@@ -301,6 +332,11 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 142px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1344px) {
+    margin-top: 241px;
   }
 
   .item {
@@ -309,10 +345,16 @@ header {
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.08em;
-    color: black;
+    color: $primary-color;
 
     @media screen and (min-width: 768px) {
-      width: calc(100% / 3);
+      width: 215px;
+    }
+
+    @media screen and (min-width: 1344px) {
+      width: 418px;
+      font-size: 20px;
+      line-height: 1.65;
     }
   }
 
@@ -327,16 +369,55 @@ header {
     min-width: 146px;
     margin: 0;
 
+    @media screen and (max-width: 1333px) {
+      height: 60px;
+    }
+
+    @media screen and (min-width: 1344px) {
+      padding-left: 82px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+
     &::before {
       content: '';
       display: block;
       position: absolute;
+      top: 0;
       left: 0;
-      background-image: url(../images/icons/heroicon1.svg);
       background-size: contain;
       background-repeat: no-repeat;
       width: 59px;
       height: 60px;
+
+      @media screen and (min-width: 1344px) {
+        width: 100px;
+        height: 102px;
+      }
+    }
+  }
+
+  .icon1::before {
+    background-image: url(../images/icons/heroicon1.svg);
+
+    @media screen and (min-width: 1344px) {
+      background-image: url(../images/icons/heroicon-d1.svg);
+    }
+  }
+
+  .icon2::before {
+    background-image: url(../images/icons/heroicon2.svg);
+
+    @media screen and (min-width: 1344px) {
+      background-image: url(../images/icons/heroicon-d2.svg);
+    }
+  }
+
+  .icon3::before {
+    background-image: url(../images/icons/heroicon3.svg);
+
+    @media screen and (min-width: 1344px) {
+      background-image: url(../images/icons/heroicon-d3.svg);
     }
   }
 }
