@@ -22,29 +22,59 @@ h1,h2,h3,p {
   margin: 0;
   padding: 0;
 }
-.slider-item {
-  width: 280px;
+.slider_item {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  background-color:$white-color;
+
+  @media screen and (min-width: 768px){
+   width: 688px;
+   display: flex;
+   text-align: left;
+}
+
+@media screen and (min-width: 1344px){
+  width: 1090px;
+  display: flex;
+  }
 
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
+
 .our_client {
-  display: block;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 20px; */
+
+  @media screen and (min-width: 768px){
+}
 }
 .client-photo {
+  width: fit-content;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 26px;
+  padding-top: 20px;
+
+  @media screen and (min-width: 768px){
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 46px;
+  }
 }
-.social-icon {
-  display: block;
+a, .social-icon {
+  display: flex;
   width: 30px;
   height: 17px;
   margin-right: auto;
   margin-left: auto;
+  fill: #436EAB;
+}
+
+@media screen and (min-width: 768px){
+  .info_our_client {
+  width: calc(70% - 40px);
+  }
 }
 
 .client_name {
@@ -53,6 +83,19 @@ font-weight: 800;
 font-size: 14px;
 line-height: 17px;
 color: $accent-color;
+
+@media screen and (min-width: 768px){
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 1344px){
+  margin-top: 50px;
+  font-size: 30px;
+  line-height: 1.233;
+}
+
+
+
 }
 .client_grades {
   margin-top: 10px;
@@ -62,30 +105,85 @@ color: $accent-color;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+
+  @media screen and (min-width: 768px){
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+  }
+  
+  @media screen and (min-width: 1344px){
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-right: 380px;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 .client_feedback {
-padding-bottom: 20px;
+margin: 0;
+padding: 0 20px;
+height: 165px;
+overflow: hidden;
+transition: all 1s linear;
 
 font-weight: 500;
 font-size: 12px;
-line-height: 20px;
+line-height: 1.67;
+
+@media screen and (min-width: 768px){
+  height: 139px;
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+@media screen and (min-width: 1344px){
+  height: 168px;
+  font-size: 18px;
+line-height: 1.555;
+}
+
+
 }
 .client_feedback.is-open{
 height: 100%;
 overflow: visible;
 transition: all 1s linear;
 }
+.hidden-button {
+  font-family: "MontserratM",sans-serif;
+  margin: 0;
+  padding: 0;
+  right: 36px;
+  bottom: 34px;
+  color: #ff6b08;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  overflow: visible;
+  outline: 0;
 
-.client_feedback {
-margin: 0;
-height: 165px;
-overflow: hidden;
-transition: all 1s linear;
+  @media screen and (min-width: 1344px){
+    font-size: 18px;
+    line-height: 1.555;
+  }
 }
 
 .slider {
-  width: 280px;
+  min-width: 100%;
   margin: auto;
+
+@media screen and (min-width: 768px){
+  width: 688px;
+}
+
+@media screen and (min-width: 1344px){
+  width: 1090px;
+  }
 }
 
 /* Слайдер */
@@ -104,6 +202,8 @@ transition: all 1s linear;
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
+}
+.slick-list.draggable {
 }
 
 /* Лента слайдов */
@@ -141,6 +241,10 @@ transition: all 1s linear;
   z-index: 10;
   outline: none;
   border: none;
+
+  @media screen and (min-width:768px) {
+    bottom: 50%;
+    }
 }
 
 
@@ -151,6 +255,13 @@ transition: all 1s linear;
   background: url(/images/reviews/left-c.svg) 0 0 no-repeat;
   background-size: contain;
   border-radius: 50%;
+
+  @media screen and (min-width: 768px){
+  left: -10px;
+  }
+  @media screen and (min-width: 1344px){
+  left: -48px;
+  }
 }
 
 /* Стрелка вправо */
@@ -159,6 +270,13 @@ transition: all 1s linear;
   background: url(/images/reviews/right-c.svg) 0 0 no-repeat;
   background-size: contain;
   border-radius: 50%;
+
+  @media screen and (min-width: 768px){
+  right: -10px;
+  }
+  @media screen and (min-width: 1344px){
+  right: -48px;
+  }
 }
 
 /* Стрелка не активная */
@@ -171,6 +289,8 @@ transition: all 1s linear;
   list-style: none;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
 }
 .slick-dots li button{
   width: 54px;
@@ -191,6 +311,7 @@ transition: all 1s linear;
 /* Элемент точки */
 .slick-dots li{
   border: 2px solid grey;
+  border-radius: 50%;
   margin-right: 10px;
 
   &:nth-last-of-type(-n + 1) {
