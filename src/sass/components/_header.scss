@@ -23,7 +23,6 @@ header {
   }
 
   @media screen and (min-width: 1344px) {
-    justify-content: safe;
     padding-top: 45px;
   }
 
@@ -41,6 +40,7 @@ header {
     background-color: transparent;
     border: none;
     color: $primary-color;
+    cursor: pointer;
 
     // &:hover,
     // &:focus {
@@ -71,31 +71,34 @@ header {
 // навигация
 
 .menu-nav {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 30px;
-  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  @media screen and (max-width: 1333px) {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
 
-  @media screen and (min-width: 768px) {
-    padding-top: 42px;
-  }
+    &.is-open {
+      opacity: 1;
+      pointer-events: initial;
+      padding-top: 30px;
+      background-color: rgba(17, 21, 24, 0.9);
+      z-index: 999;
 
-  @media screen and (min-width: 1344px) {
-    position: static;
-    display: block;
-    padding: 0;
-  }
-  &.is-open {
-    opacity: 1;
-    background-color: rgba(17, 21, 24, 0.9);
-    z-index: 999;
+      @media screen and (min-width: 768px) {
+        padding-top: 42px;
+      }
+    }
 
-    @media screen and (min-width: 768px) {
-      padding-top: 42px;
+    @media screen and (min-width: 1344px) {
+      // opacity: 1;
+      // position: static;
+      display: block;
+      padding: 0;
+      background-color: $white-color;
     }
   }
 
@@ -135,6 +138,7 @@ header {
   background-color: transparent;
   color: $accent-color;
   border: 2px solid $accent-color;
+  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
 
   &:hover,
   &:focus {
@@ -191,6 +195,7 @@ header {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: $white-color;
+  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
 
   &:hover,
   &:focus {
@@ -289,6 +294,7 @@ header {
   background-color: $accent-color;
   color: $white-color;
   border: 2px solid $accent-color;
+  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
 
   &:hover,
   &:focus {
