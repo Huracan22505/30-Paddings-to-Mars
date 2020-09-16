@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <section class="footer">
-  <div class="registration">
-    <div class="registration-container">
+  <div class="registration" id="callback" >
+    <div class="registration-container container">
       <h2 class="footer-title">
         Регистрация на <strong class="footer-accent"> бесплатную </strong> телефонную <strong class="footer-accent"> консультацию </strong> по нюансам ЗНО
         по английскому языку
@@ -23,11 +23,9 @@
       </form>
     </div>
   </div>
-  <div class="contacts">
-    <ul class="contacts-list list">
-      <li class="contacts-list item">
-        <div class="footer-logo">
-          <a href="#">
+  <div class="contacts container" id="contact" >
+      <div class="footer-logo-position">
+          <a href="#" class="footer-logo">
             <picture>
               <source
                 srcset="
@@ -61,22 +59,16 @@
               <img src="./images/logo/logo-black.png" alt="" />
             </picture>
           </a>
-        </div>
-      </li>
-      <li class="contacts-list item">
-        <a href="tel:+380000000000" class="tel link">
-           +380 (000) 000 00 00
-        </a>
-      </li>
-      <li class="contacts-list item">
-        <a href="#" class="insta link">
-          <svg class="insta icon" height="40" width="40" aria-label="Cылка на инстаграм"> <use href="./images/footer-images/insta-sprite.svg#instagram"></use> </svg>
-        </a>
-      </li>
-    </ul>
+      </div>
+      <div class="footer-links">
+      <a href="tel:+380000000000" class="tel link">
+         +380 (000) 000 00 00
+      </a>
+      <a href="#" class="insta link"></a>
+      </div>
   </div>
   <div class="rights">
-    <p class="rights-text">
+    <p class="rights-text container">
       &commat; Все права защищены, 2019
     </p>
   </div>
