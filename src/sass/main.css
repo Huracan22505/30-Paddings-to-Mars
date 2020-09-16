@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* montserrat-regular - latin_cyrillic */
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v14-latin_cyrillic-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/montserrat-v14-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v14-latin_cyrillic-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/montserrat-v14-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v14-latin_cyrillic-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v14-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v14-latin_cyrillic-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-800 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"), url("../fonts/montserrat-v14-latin_cyrillic-800.woff2") format("woff2"), url("../fonts/montserrat-v14-latin_cyrillic-800.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  background-color: #ffffff;
+  color: #111518;
+  font-family: Montserrat, sans-serif;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .container {
+    width: 1344px;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.reviews-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.reviews-title-tablet {
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-title {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-title-tablet {
+    display: none;
+  }
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+          box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.our_client {
+  display: block;
+  padding-top: 20px;
+}
+
+.client-photo {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 26px;
+}
+
+.social-icon {
+  display: block;
+  width: 30px;
+  height: 17px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.client_name {
+  margin-top: 26px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ff6b09;
+}
+
+.client_grades {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #b9b9b9;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.client_feedback {
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.client_feedback.is-open {
+  height: 100%;
+  overflow: visible;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.client_feedback {
+  margin: 0;
+  height: 165px;
+  overflow: hidden;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.slider {
+  width: 280px;
+  margin: auto;
+}
+
+/* Слайдер */
+.slick-slider {
+  position: relative;
+  padding-top: 50px;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  bottom: 13px;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+  outline: none;
+  border: none;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0%;
+  background: url(/images/reviews/left-c.svg) 0 0 no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0%;
+  background: url(/images/reviews/right-c.svg) 0 0 no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.slick-dots li button {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  font-size: 0;
+  border: none;
+  outline-color: orangered;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  border: 2px solid #ff6b08;
+  border-radius: 50%;
+}
+
+/* Элемент точки */
+.slick-dots li {
+  border: 2px solid grey;
+  margin-right: 10px;
+}
+
+.slick-dots li:nth-last-of-type(-n + 1) {
+  margin-right: 0px;
+}
+
+#slick-slide-control00 {
+  background-image: url(/images/reviews/item2.png);
+}
+
+#slick-slide-control01 {
+  background-image: url(/images/reviews/item3.png);
+}
+
+#slick-slide-control02 {
+  background-image: url(/images/reviews/item4.png);
+}
+/*# sourceMappingURL=main.css.map */
