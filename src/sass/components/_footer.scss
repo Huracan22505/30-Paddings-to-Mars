@@ -231,15 +231,10 @@
     border-right: 1px solid $secondary-text-color;
   }
 }
-.tel.link::before {
-  content: " ";
+.tel.link {
   margin-right: 10px;
   height: 19px;
   width: 20px;
-  vertical-align: middle;
-  background-image: url(../images/footer-images/phone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   @media screen and (min-width: 768px) and (max-width: 1343px) {
     width: 24px;
     height: 23.06px;
@@ -273,6 +268,8 @@
   }
 }
 .rights-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: $secondary-text-color;
   font-weight: 500;
   font-size: 14px;
