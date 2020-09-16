@@ -3,6 +3,16 @@
   height: 545px;
   background-color: $primary-color;
 
+  @media screen and (min-width: 768px) {
+    height: 340px;
+  }
+}
+
+.problems-title-wrap {
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+  }
+
   .title {
     padding: 0;
     margin: 0 0 27px 0;
@@ -14,12 +24,20 @@
     letter-spacing: 0.03em;
     color: $white-color;
   }
+  @media screen and (min-width: 768px) and (max-width: 1343px) {
+    font-size: 26px;
+    line-height: 1.308;
+  }
 }
 
 .title-span {
-  display: block;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
 }
-
 .accent-title-span {
   color: $accent-color;
 }
@@ -37,9 +55,20 @@
     margin-bottom: 0;
   }
 }
+
+.dashnumber-wrap {
+  margin-bottom: 5px;
+}
+
+.problems-dash {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+}
+
 .problems-number {
-  position: relative;
-  margin: 0 0 5px 30px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.214;
@@ -47,21 +76,33 @@
   color: $accent-color;
 }
 
-.problems-number::before {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 20px;
-  height: 2px;
-  top: 7px;
-  left: -30px;
-  background-color: $accent-color;
-}
+// .problems-number {
+//   position: relative;
+//   margin: 0 0 5px 30px;
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 1.214;
+//   letter-spacing: 0.08em;
+//   color: $accent-color;
+// }
+
+// .problems-number::before {
+//   display: block;
+//   position: absolute;
+//   content: '';
+//   width: 20px;
+//   height: 2px;
+//   top: 7px;
+//   left: -30px;
+//   background-color: $accent-color;
+// }
 
 .problems-subtitle {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.714;
+  letter-spacing: 0.08em;
   color: $primary-color;
 }
