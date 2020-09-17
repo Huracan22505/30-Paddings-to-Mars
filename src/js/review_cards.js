@@ -24,7 +24,6 @@ const closeMoreInfo = () => {
 		allText.forEach((e) => {
 				e.classList.remove("active");
 		});
-
 };
 
 btnMobile.forEach((e) => {
