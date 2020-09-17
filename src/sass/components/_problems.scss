@@ -1,19 +1,24 @@
-.problems-section {
+.section-problems {
   padding-top: 50px;
   padding-bottom: 375px;
-  background-color: $primary-color;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
+  background-color: $primary-color;
 
   @media screen and (min-width: 768px) {
     padding-top: 59.5px;
     padding-bottom: 176.5px;
-    // height: 340px;
   }
 
   @media screen and (min-width: 1344px) {
-    height: 560px;
-    // padding-top: 100px;
-    // padding-bottom: 282px;
+    padding-top: 100px;
+    padding-bottom: 282px;
+    background-image: url(../images/problems/fire-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 452px 455px contain;
   }
 }
 
@@ -27,7 +32,7 @@
   }
 }
 
-.header.title-span {
+.problems.line-break {
   @media screen and (min-width: 768px) {
     display: inline-block;
   }
@@ -36,7 +41,6 @@
 .title {
   padding: 0;
   margin: 0;
-  margin: 0 0 27px 0;
   text-align: left;
 
   font-size: 20px;
@@ -46,7 +50,6 @@
   color: $white-color;
 
   @media screen and (min-width: 768px) {
-    margin: 0 0 25px 0;
     font-size: 26px;
     line-height: 1.308;
   }
@@ -54,11 +57,10 @@
   @media screen and (min-width: 1344px) {
     font-size: 46px;
     line-height: 1.304;
-    margin: 0 0 70px 0;
   }
 }
 
-.title-span {
+.line-break {
   display: block;
 
   @media screen and (min-width: 1344px) {
@@ -66,13 +68,13 @@
   }
 }
 
-.accent-title-span {
+.problems.accent-element {
   color: $accent-color;
 }
 
 .overlay-container {
   position: absolute;
-  bottom: -148px;
+  bottom: -165px;
   right: 50%;
   transform: translateX(50%);
   max-width: 280px;
@@ -84,13 +86,13 @@
   @media screen and (min-width: 768px) {
     max-width: 688px;
     padding: 30px 96px 26px 96px;
-    bottom: -180px;
+    bottom: -191px;
   }
 
   @media screen and (min-width: 1344px) {
     max-width: 1314px;
     padding: 70px 112px 62px 114px;
-    bottom: -90px;
+    bottom: -130px;
   }
 }
 
