@@ -127,6 +127,10 @@ header {
   }
 }
 
+body.menu-open {
+  overflow-y: hidden;
+}
+
 // кнопка консультации
 .modal-button,
 .header-button {
