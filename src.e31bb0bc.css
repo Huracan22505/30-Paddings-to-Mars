@@ -270,6 +270,10 @@ header {
   }
 }
 
+body.menu-open {
+  overflow-y: hidden;
+}
+
 .modal-button,
 .header-button {
   background-color: transparent;
@@ -466,6 +470,12 @@ header {
 }
 @media screen and (min-width: 1344px) {
   .hero-img {
+    right: -15px;
+    width: calc(50% + 50px);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero-img {
     top: 46px;
     left: calc(50% - 52px);
     width: 842px;
@@ -577,7 +587,6 @@ header {
 .section-problems {
   padding-top: 50px;
   padding-bottom: 375px;
-  max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -1496,6 +1505,7 @@ header {
   height: 14px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   background-image: url(/check.928c4414.svg);
 }
 @media screen and (min-width: 1344px) {
@@ -2489,7 +2499,7 @@ p {
 }
 @media screen and (min-width: 1344px) {
   .rights {
-    padding: 22px 15px;
+    padding: 22px 0;
   }
 }
 
