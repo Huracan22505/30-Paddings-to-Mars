@@ -62,7 +62,7 @@
 
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
-    transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
 
     @media screen and (min-width: 768px) and (max-width: 1343px) {
       width: calc(50% - 10px);
@@ -137,6 +137,12 @@
 
     color: $primary-color;
 
+    transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+
+    @media screen and (max-width: 319px) {
+      font-size: 13px;
+    }
+
     @media screen and (min-width: 1344px) {
       padding-left: 30px;
       padding-right: 30px;
@@ -161,6 +167,8 @@
 
     color: $accent-color;
 
+    transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+
     @media screen and (min-width: 768px) and (max-width: 1343px) {
       margin-top: 10px;
       margin-bottom: 10px;
@@ -177,6 +185,12 @@
     letter-spacing: 0.08em;
 
     color: $secondary-text-color;
+
+    transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+
+    @media screen and (max-width: 319px) {
+      font-size: 11px;
+    }
 
     @media screen and (min-width: 768px) {
       padding-right: 20px;
