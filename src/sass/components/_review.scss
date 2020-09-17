@@ -3,16 +3,21 @@
   padding-bottom: 50px;
   text-align: center;
 
-@media screen and (min-width: 1344px){
-  padding-top: 130px;
-  padding-bottom: 130px;
+  @media screen and (min-width: 1344px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
-}
-.reviews-title{
+.reviews-title {
   padding-bottom: 30px;
 }
 .reviews-title-tablet {
   padding-bottom: 40px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 @media screen and (max-width: 767px) {
@@ -22,8 +27,10 @@
 }
 @media screen and (min-width: 768px) {
   .reviews-title {
-  font-size: 26px;
-  line-height: 1.3;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
   }
   .reviews-title-tablet {
     display: none;
@@ -31,8 +38,7 @@
 }
 @media screen and (min-width: 768px) {
   .reviews-title {
-  font-size: 46px;
-  line-height: 1.3;
+    font-size: 46px;
   }
 }
 
@@ -47,7 +53,6 @@ p {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  
 
   @media screen and (min-width: 768px) {
     width: 688px;
@@ -91,8 +96,9 @@ p {
   margin-left: auto;
   fill: #436eab;
 
-  &:hover, :focus {
-    fill:$accent-color;
+  &:hover,
+  :focus {
+    fill: $accent-color;
   }
 }
 
@@ -130,6 +136,7 @@ p {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  letter-spacing: 0.08em;
 
   @media screen and (min-width: 768px) {
     margin-top: 20px;
@@ -214,7 +221,6 @@ p {
 /* Слайдер */
 .slick-slider {
   position: relative;
-  
 }
 
 /* Слайдер запущен */
