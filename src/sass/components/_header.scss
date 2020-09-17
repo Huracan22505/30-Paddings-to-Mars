@@ -42,11 +42,6 @@ header {
     color: $primary-color;
     cursor: pointer;
 
-    // &:hover,
-    // &:focus {
-    //   color: $accent-color;
-    // }
-
     @media screen and (min-width: 1344px) {
       display: none;
     }
@@ -64,14 +59,13 @@ header {
     width: 20px;
     height: 12px;
     vertical-align: middle;
-    fill: currentColor;
   }
 }
 
 // навигация
 
 .menu-nav {
-  @media screen and (max-width: 1333px) {
+  @media screen and (max-width: 1343px) {
     opacity: 0;
     pointer-events: none;
     position: fixed;
@@ -379,7 +373,7 @@ header {
     min-width: 146px;
     margin: 0;
 
-    @media screen and (max-width: 1333px) {
+    @media screen and (max-width: 1343px) {
       height: 60px;
     }
 
