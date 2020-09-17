@@ -320,6 +320,11 @@ header {
   }
 
   @media screen and (min-width: 1344px) {
+    right: -15px;
+    width: calc(50% + 50px);
+  }
+
+  @media screen and (min-width: 1600px) {
     top: 46px;
     left: calc(50% - 52px);
     width: 842px;
