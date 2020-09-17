@@ -181,13 +181,12 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
-  text-decoration-line: underline;
+  text-decoration: underline;
   color: $accent-color;
-  transition: 250ms cubic-bezier(0.42, 0, 0.58, 1);
 
   &:hover,
   &:focus {
-    text-decoration-line: none;
+    text-decoration: none;
   }
 
   @media screen and (min-width: 1344px) {
