@@ -71,7 +71,7 @@ header {
 // навигация
 
 .menu-nav {
-  @media screen and (max-width: 1333px) {
+  @media screen and (max-width: 1343px) {
     opacity: 0;
     pointer-events: none;
     position: fixed;
@@ -379,7 +379,7 @@ header {
     min-width: 146px;
     margin: 0;
 
-    @media screen and (max-width: 1333px) {
+    @media screen and (max-width: 1343px) {
       height: 60px;
     }
 
