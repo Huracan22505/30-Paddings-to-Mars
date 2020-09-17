@@ -1,9 +1,11 @@
 .section-problems {
   padding-top: 50px;
   padding-bottom: 375px;
-  max-width: 1688px;
-  background-color: $primary-color;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
+  background-color: $primary-color;
 
   @media screen and (min-width: 768px) {
     padding-top: 59.5px;
@@ -13,6 +15,10 @@
   @media screen and (min-width: 1344px) {
     padding-top: 100px;
     padding-bottom: 282px;
+    background-image: url(../images/problems/fire-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 452px 455px contain;
   }
 }
 
@@ -62,7 +68,7 @@
   }
 }
 
-.accent-element {
+.problems.accent-element {
   color: $accent-color;
 }
 
