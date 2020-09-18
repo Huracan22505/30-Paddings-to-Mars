@@ -173,7 +173,7 @@
     background-color: $white-color;
 
     @media screen and (min-width: 576px) and (max-width: 767px) {
-      height: 850px;
+      height: 800px;
     }
 
     @media screen and (min-width: 768px) {
@@ -240,6 +240,7 @@
 }
 
 .program-section-image {
+  z-index: 22;
   position: absolute;
   right: 0;
   bottom: 440px;
@@ -247,6 +248,11 @@
 
   @media screen and (max-width: 270px) {
     display: none;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    bottom: 200px;
+    width: 300px;
   }
 
   @media screen and (min-width: 768px) {
