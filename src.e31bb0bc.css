@@ -1350,7 +1350,6 @@ header {
 }
 
 .program-section-image {
-  z-index: 22;
   position: absolute;
   right: 0;
   bottom: 440px;
@@ -1887,7 +1886,7 @@ header {
   z-index: 1;
   position: absolute;
   content: "";
-  border-left: 1.35px dashed #b9b9b9;
+  border-left: 1px dashed #b9b9b9;
   height: 90%;
   top: 24px;
   left: 3.5px;
@@ -1900,7 +1899,7 @@ header {
 @media screen and (min-width: 1344px) {
   .guaranties-item:not(:last-child)::after {
     top: 27px;
-    left: 5.5px;
+    left: 6.5px;
     height: 70%;
   }
 }
