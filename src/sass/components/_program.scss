@@ -6,6 +6,13 @@
   margin-right: auto;
   margin-left: auto;
 
+  // YC's changes
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 160px;
+  }
+  //
+
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 170px;
@@ -58,6 +65,9 @@
   margin-top: 50px;
   margin-bottom: 0px;
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 100%;
+  }
   @media screen and (min-width: 768px) {
     text-align: center;
     line-height: 1.3;
@@ -135,6 +145,11 @@
     margin-left: 0px;
   }
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-left: 40px;
+    margin-left: 57px;
+  }
+
   @media screen and (min-width: 768px) {
     padding-left: 50px;
     margin-left: 67px;
@@ -156,6 +171,10 @@
     width: 1px;
     height: 1265px;
     background-color: $white-color;
+
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      height: 800px;
+    }
 
     @media screen and (min-width: 768px) {
       height: 700px;
@@ -185,6 +204,10 @@
       height: 12px;
       top: 8px;
       left: -31px;
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        left: -47px;
+      }
 
       @media screen and (min-width: 768px) {
         left: -56px;
@@ -217,6 +240,7 @@
 }
 
 .program-section-image {
+  z-index: 22;
   position: absolute;
   right: 0;
   bottom: 440px;
@@ -224,6 +248,11 @@
 
   @media screen and (max-width: 270px) {
     display: none;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    bottom: 200px;
+    width: 300px;
   }
 
   @media screen and (min-width: 768px) {
@@ -244,7 +273,7 @@
 .semester-list {
   padding-top: 11px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
     display: flex;
     align-items: baseline;
   }
@@ -256,9 +285,17 @@
 }
 
 .semestr-list-item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 575px) {
     &:not(:first-child) {
       margin-top: 14px;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-top: 0;
+    width: 133px;
+    &:not(:first-child) {
+      margin-left: 20px;
     }
   }
 
@@ -304,6 +341,14 @@
   max-width: 280px;
   width: 100%;
 
+  // YC's changes
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 536px;
+    bottom: -180px;
+    bottom: -231px;
+  }
+  //
+
   @media screen and (min-width: 768px) {
     max-width: 688px;
     padding-left: 98px;
@@ -332,7 +377,18 @@
       margin-bottom: 0;
     }
   }
-
+  // YC's update
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-bottom: 20px;
+    &:nth-child(2n + 1) {
+      width: 306px;
+      margin-right: 50px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+  //
   @media screen and (min-width: 768px) and (max-width: 1343px) {
     margin-bottom: 30px;
 
@@ -390,7 +446,9 @@
 }
 
 .choose-us-list {
-  @media screen and (min-width: 768px) {
+  // YC's update
+  @media screen and (min-width: 576px) {
+    //
     display: flex;
     flex-wrap: wrap;
   }
@@ -400,6 +458,11 @@
   display: inline-block;
   max-width: 205px;
 
+  // YC's update
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 350px;
+  }
+  //
   @media screen and (min-width: 1344px) {
     max-width: 356px;
   }

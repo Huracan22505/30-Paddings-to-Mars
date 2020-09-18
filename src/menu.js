@@ -19,6 +19,6 @@
   function toggleModal() {
     document.body.classList.toggle('burger-menu-open');
     refs.menu.classList.toggle('is-open');
-    // document.body.classList.toggle('menu-open');
+    document.body.classList.toggle('menu-open');
   }
 })();

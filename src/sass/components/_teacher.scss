@@ -16,11 +16,23 @@
   }
 }
 
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .teacher-tab {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .teacher-about {
+    margin-left: auto;
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .teacher-tab {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
-
   .teacher-about {
     margin-left: 40px;
     width: calc(100% - 286px);
@@ -31,6 +43,26 @@
   .teacher-about {
     margin-left: 30px;
     width: calc(50% - 15px);
+  }
+}
+
+.teacher-about span {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.65;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -127,6 +159,10 @@
   letter-spacing: 0.06em;
   color: $primary-color;
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    font-size: 15px;
+  }
+
   @media screen and (min-width: 1344px) {
     font-size: 16px;
     line-height: 1.25;
@@ -134,8 +170,6 @@
 }
 
 .education {
-  position: relative;
-  // padding-bottom: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
@@ -146,38 +180,29 @@
     margin-top: 21px;
   }
 
-  span {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.65;
-    letter-spacing: 0.08em;
-    color: $accent-color;
-
-    @media screen and (min-width: 768px) {
-      margin-top: 0px;
-    }
-
-    @media screen and (min-width: 1344px) {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    font-size: 13px;
   }
 
   @media screen and (min-width: 768px) {
+    margin-top: -53px;
+    margin-left: auto;
+    width: calc(100% - 286px);
     letter-spacing: 0em;
   }
 
   @media screen and (min-width: 1344px) {
+    margin-left: auto;
+    margin-right: 112px;
+    margin-top: -364px;
+    width: calc(50% - 15px);
     font-size: 18px;
     line-height: 1.56;
   }
 }
 
 .univer {
-  display: block;
+  display: inline-block;
   margin-top: 10px;
   font-weight: 500;
   font-size: 12px;

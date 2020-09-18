@@ -143,6 +143,14 @@
       font-size: 13px;
     }
 
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      display: block;
+
+      margin: 0px auto;
+
+      width: 50%;
+    }
+
     @media screen and (min-width: 1344px) {
       padding-left: 30px;
       padding-right: 30px;
@@ -190,6 +198,10 @@
 
     @media screen and (max-width: 319px) {
       font-size: 11px;
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      padding: 0px 20px;
     }
 
     @media screen and (min-width: 768px) {

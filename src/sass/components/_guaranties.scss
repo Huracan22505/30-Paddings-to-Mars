@@ -21,6 +21,10 @@
 .guaranties-wrap {
   padding-top: 30px;
   padding-bottom: 31px;
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding: 35px 40px 35px 48px;
+  }
   @media screen and (max-width: 767px) {
     background-color: #f1f1f1;
   }
@@ -35,6 +39,7 @@
   margin: 0 auto;
   list-style: none;
   position: relative;
+
   @media screen and (max-width: 767px) {
     padding: 0;
   }

@@ -7,6 +7,11 @@
   position: relative;
   background-color: $primary-color;
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 160px;
+  }
+
   @media screen and (min-width: 768px) {
     padding-top: 59.5px;
     padding-bottom: 176.5px;
@@ -23,6 +28,10 @@
 }
 
 .problems-title-wrap {
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 450px;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 480px;
   }
@@ -33,7 +42,7 @@
 }
 
 .problems.line-break {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
     display: inline-block;
   }
 }
@@ -83,6 +92,11 @@
   background-color: $primary-bcg-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 536px;
+    bottom: -180px;
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 688px;
     padding: 30px 96px 26px 96px;
@@ -97,7 +111,7 @@
 }
 
 .problems.list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -109,6 +123,17 @@
 
     &:last-child {
       margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-bottom: 6px;
+    &:nth-child(2n + 1) {
+      width: 236px;
+      margin-right: 18px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-top: 28px;
     }
   }
 
