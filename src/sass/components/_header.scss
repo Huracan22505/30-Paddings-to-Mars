@@ -2,13 +2,21 @@ header {
   background-image: url(../images/hero/wave-mob.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -250px;
+
+  @media screen and (min-width: 576px) {
+    background-image: url(../images/hero/wave-tab.svg);
+    background-position-y: -100px;
+  }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/hero/wave-tab.svg);
+    background-position-y: -150px;
   }
 
   @media screen and (min-width: 1344px) {
     background-image: url(../images/hero/wave-desk.svg);
+    background-position-y: -250px;
+    background-position-x: -150px;
   }
 }
 
