@@ -6,6 +6,13 @@
   margin-right: auto;
   margin-left: auto;
 
+  // YC's changes
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 160px;
+  }
+  //
+
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 170px;
@@ -58,6 +65,9 @@
   margin-top: 50px;
   margin-bottom: 0px;
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 100%;
+  }
   @media screen and (min-width: 768px) {
     text-align: center;
     line-height: 1.3;
@@ -304,6 +314,14 @@
   max-width: 280px;
   width: 100%;
 
+  // YC's changes
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 536px;
+    bottom: -180px;
+    bottom: -231px;
+  }
+  //
+
   @media screen and (min-width: 768px) {
     max-width: 688px;
     padding-left: 98px;
@@ -332,7 +350,18 @@
       margin-bottom: 0;
     }
   }
-
+  // YC's update
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-bottom: 20px;
+    &:nth-child(2n + 1) {
+      width: 306px;
+      margin-right: 50px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+  //
   @media screen and (min-width: 768px) and (max-width: 1343px) {
     margin-bottom: 30px;
 
@@ -390,7 +419,9 @@
 }
 
 .choose-us-list {
-  @media screen and (min-width: 768px) {
+  // YC's update
+  @media screen and (min-width: 576px) {
+    //
     display: flex;
     flex-wrap: wrap;
   }
@@ -400,6 +431,11 @@
   display: inline-block;
   max-width: 205px;
 
+  // YC's update
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    max-width: 350px;
+  }
+  //
   @media screen and (min-width: 1344px) {
     max-width: 356px;
   }
