@@ -135,6 +135,11 @@
     margin-left: 0px;
   }
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    padding-left: 40px;
+    margin-left: 57px;
+  }
+
   @media screen and (min-width: 768px) {
     padding-left: 50px;
     margin-left: 67px;
@@ -156,6 +161,10 @@
     width: 1px;
     height: 1265px;
     background-color: $white-color;
+
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      height: 850px;
+    }
 
     @media screen and (min-width: 768px) {
       height: 700px;
@@ -185,6 +194,10 @@
       height: 12px;
       top: 8px;
       left: -31px;
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        left: -47px;
+      }
 
       @media screen and (min-width: 768px) {
         left: -56px;
@@ -244,7 +257,7 @@
 .semester-list {
   padding-top: 11px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
     display: flex;
     align-items: baseline;
   }
@@ -256,9 +269,17 @@
 }
 
 .semestr-list-item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 575px) {
     &:not(:first-child) {
       margin-top: 14px;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-top: 0;
+    width: 133px;
+    &:not(:first-child) {
+      margin-left: 20px;
     }
   }
 
