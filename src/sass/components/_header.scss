@@ -128,7 +128,9 @@ header {
 }
 
 body.menu-open {
-  overflow-y: hidden;
+  @media screen and (max-width: 1343px) {
+    overflow-y: hidden;
+  }
 }
 
 // кнопка консультации
