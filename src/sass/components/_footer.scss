@@ -139,7 +139,7 @@
   color: $white-color;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.21;
+  line-height: normal;
   letter-spacing: 0.08em;
   cursor: pointer;
   &::placeholder {
@@ -162,7 +162,7 @@
     height: 70px;
     padding: 23px 40px;
     font-size: 20px;
-    line-height: 1.21;
+    line-height: normal;
   }
   &:focus {
     border: 1px solid $accent-color;
