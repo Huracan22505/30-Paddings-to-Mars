@@ -50,7 +50,7 @@ p {
   padding: 0;
 }
 .slider_item {
-  width: 100%;
+  width: 280px;
   margin-right: auto;
   margin-left: auto;
 
@@ -58,6 +58,7 @@ p {
     width: 688px;
     display: flex;
     text-align: left;
+    
   }
 
   @media screen and (min-width: 1344px) {
@@ -193,11 +194,12 @@ p {
   line-height: 20px;
   font-weight: 500;
   text-decoration: underline;
-  border: 0;
+  border: none;
   cursor: pointer;
   background-color: transparent;
   overflow: visible;
-  outline: 0;
+  outline: none;
+  
 
   @media screen and (min-width: 1344px) {
     font-size: 18px;
@@ -221,6 +223,15 @@ p {
 /* Слайдер */
 .slick-slider {
   position: relative;
+  width: 280px;
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 1090px;
+  }
 }
 
 /* Слайдер запущен */
@@ -248,10 +259,12 @@ p {
 /* Слайд */
 .slick-slide {
   padding: 20px 20px 30px 20px;
+
 }
 
 /* Слайд активный (показывается) */
 .slick-slide.slick-active {
+  
 }
 
 /* Слайд основной */
@@ -335,12 +348,16 @@ p {
   font-size: 0;
   border: none;
   outline-color: orangered;
+  
 }
 
 /* Активная точка */
 .slick-dots li.slick-active {
   border: 2px solid #ff6b08;
   border-radius: 50%;
+  outline-style: none;
+  
+  
 }
 /* Элемент точки */
 .slick-dots li {
