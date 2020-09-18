@@ -127,6 +127,10 @@
   letter-spacing: 0.06em;
   color: $primary-color;
 
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    font-size: 15px;
+  }
+
   @media screen and (min-width: 1344px) {
     font-size: 16px;
     line-height: 1.25;
@@ -164,6 +168,10 @@
       margin-top: 15px;
       margin-bottom: 15px;
     }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    font-size: 13px;
   }
 
   @media screen and (min-width: 768px) {
