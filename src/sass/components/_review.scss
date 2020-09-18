@@ -98,8 +98,8 @@ p {
 .social-link,
 .social-icon {
   display: flex;
-  width: 30px;
-  height: 17px;
+  width: 48px;
+  height: 27px;
   margin-right: auto;
   margin-left: auto;
   fill: #436eab;
@@ -170,8 +170,15 @@ p {
   font-size: 12px;
   line-height: 1.67;
 
+  @media screen and (min-width: 576px) {
+    height: 120px;
+    padding-left: 0;
+    overflow: hidden;
+    transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
   @media screen and (min-width: 768px) {
-    height: 139px;
+    height: 135px;
     padding-left: 0;
     overflow: hidden;
     transition: 500ms cubic-bezier(0.42, 0, 0.58, 1);
